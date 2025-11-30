@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRD5-2-1", "SRD5-2-1\SRD5-2-1.csproj", "{1A4ABF5D-3A0C-4141-ADD7-0EA27A733BAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRD-5-2-1", "SRD-5-2-1\SRD-5-2-1.csproj", "{1A4ABF5D-3A0C-4141-ADD7-0EA27A733BAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
