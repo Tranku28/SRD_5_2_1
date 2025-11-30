@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <!-- Multi-targeting dla Unity oraz nowoczesnych platform -->
+        <TargetFrameworks>netstandard2.1;net8.0</TargetFrameworks>
+
+        <RootNamespace>SRD5_2_1</RootNamespace>
+
+        <!-- Automatyczne usingi (obsługiwane tylko w net6+/C#10+) -->
+        <ImplicitUsings>enable</ImplicitUsings>
+
+        <Nullable>enable</Nullable>
+
+        <!-- Wymusza najnowszą wersję języka dla net8.0,
+             ale Unity i netstandard użyją maksymalnej wspieranej wersji (C# 8)
+             – dzięki temu nie ma konfliktów -->
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+
+    <!-- Wyłącz Implicit Usings w netstandard2.1 (Unity nie wspiera global using) -->
+    <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+        <ImplicitUsings>disable</ImplicitUsings>
+    </PropertyGroup>
+
+</Project>
