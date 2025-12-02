@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9e307bf-c615-4b4a-91d1-7e5b9b8216e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SRD-5-2-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SRD-5-2-1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRD-5-2-1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SRD-5-2-1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRD-5-2-1/SRD-5-2-1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SRD-5-2-1/SRD-5-2-1.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="a9e307bf-c615-4b4a-91d1-7e5b9b8216e6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +52,7 @@
       <updated>1764523957767</updated>
       <workItem from="1764523962176" duration="155000" />
       <workItem from="1764524149060" duration="103000" />
-      <workItem from="1764667015194" duration="2090000" />
+      <workItem from="1764667015194" duration="2406000" />
     </task>
     <servers />
   </component>
