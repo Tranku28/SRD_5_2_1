@@ -13,11 +13,14 @@
         <Authors>Tranku</Authors>
         <Description>SRD-5-2-1 easy to use rules implementaion in C# for creating RPG systems</Description>
         <RepositoryUrl>https://github.com/Tranku28/SRD_5_2_1</RepositoryUrl>
-        <PackageReadmeFile>SRD-5-2-1/README.md</PackageReadmeFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>dnd;rpg;rpgsystems;game;</PackageTags>
         
     </PropertyGroup>
 
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
     
     <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
         <ImplicitUsings>disable</ImplicitUsings>
