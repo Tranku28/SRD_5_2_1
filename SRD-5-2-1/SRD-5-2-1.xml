@@ -4,6 +4,16 @@
         <name>SRD-5-2-1</name>
     </assembly>
     <members>
+        <member name="F:SRD5_2_1.DiceType.D2">
+            <summary>
+            Use D2 or 2
+            </summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D3">
+            <summary>
+            Use D3 or 3
+            </summary>
+        </member>
         <member name="T:SRD5_2_1.Random">
             <summary>
             SRD Random implementation.

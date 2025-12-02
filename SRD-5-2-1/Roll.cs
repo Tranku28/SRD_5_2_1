@@ -41,4 +41,32 @@ public static class Roll
     /// D100 roll dice
     /// </summary>
     public static int D100 => Random.Next(1, 100);
+
+    public static int Multiple(DiceType diceType, int rollCount)
+    {
+        int result = 0;
+        return diceType switch
+        {
+            DiceType.D2 => CombineRoll(2),
+            DiceType.D3 => CombineRoll(3),
+            DiceType.D4 => CombineRoll(4),
+            DiceType.D6 => CombineRoll(6),
+            DiceType.D8 => CombineRoll(8),
+            DiceType.D10 => CombineRoll(10),
+            DiceType.D12 => CombineRoll(12),
+            DiceType.D20 => CombineRoll(20),
+            DiceType.D100 => CombineRoll(100),
+            _ => 0
+        };
+
+        int CombineRoll(int diceSides)
+        {
+            for (int i = 0; i < rollCount - 1; i++)
+            {
+                result += Random.Next(1, diceSides);
+            }
+            
+            return result;
+        }
+    }
 }

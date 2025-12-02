@@ -13,7 +13,7 @@
 
         <!-- NuGet Meta -->
         <PackageId>Tranku.SRD-5-2-1</PackageId>
-        <PackageVersion>0.0.1</PackageVersion>
+        <PackageVersion>0.0.2</PackageVersion>
         <Authors>Tranku</Authors>
         <Description>SRD-5-2-1 easy to use ruleset implementation for creating RPG systems</Description>
         <RepositoryUrl>https://github.com/Tranku28/SRD_5_2_1</RepositoryUrl>
