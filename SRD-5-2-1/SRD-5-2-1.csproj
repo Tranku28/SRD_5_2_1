@@ -15,11 +15,16 @@
         <RepositoryUrl>https://github.com/Tranku28/SRD_5_2_1</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>dnd;rpg;rpgsystems;game;</PackageTags>
+        <DocumentationFile>bin\Debug\net8.0\SRD-5-2-1.xml</DocumentationFile>
         
     </PropertyGroup>
 
     <ItemGroup>
         <None Include="README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="bin\Release\net8.0\" />
     </ItemGroup>
     
     <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
