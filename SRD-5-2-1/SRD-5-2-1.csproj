@@ -14,7 +14,7 @@
         <Description>SRD-5-2-1 easy to use rules implementaion in C# for creating RPG systems</Description>
         <RepositoryUrl>https://github.com/Tranku28/SRD_5_2_1</RepositoryUrl>
         <PackageReadmeFile>SRD-5-2-1/README.md</PackageReadmeFile>
-        <PackageTags>dnd;rpg;rpgsystems;</PackageTags>
+        <PackageTags>dnd;rpg;rpgsystems;game;</PackageTags>
         
     </PropertyGroup>
 
