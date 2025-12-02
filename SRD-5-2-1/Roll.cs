@@ -61,7 +61,7 @@ public static class Roll
 
         int CombineRoll(int diceSides)
         {
-            for (int i = 0; i < rollCount - 1; i++)
+            for (int i = 0; i < rollCount; i++)
             {
                 result += Random.Next(1, diceSides);
             }
