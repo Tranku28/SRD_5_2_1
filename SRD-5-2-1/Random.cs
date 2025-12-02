@@ -1,19 +1,31 @@
-namespace SRD5_2_1;
-
-/// <summary>
-/// SRD Random implementation.
-/// </summary>
-public class Random
+namespace SRD5_2_1
 {
     /// <summary>
-    /// Get number from the provided scope where whole scope is included
+    /// Provides a custom random number generator for SRD-based mechanics.
+    /// Unlike <see cref="System.Random"/>, this implementation includes the upper bound in the generated range.
     /// </summary>
-    /// <param name="minValue">the lowest possible random number</param>
-    /// <param name="maxValue">the highest possible random number</param>
-    /// <returns>int</returns>
-    public static int Next(int minValue, int maxValue)
+    /// <remarks>
+    /// This class is designed for dice roll simulations in tabletop RPG systems.
+    /// It guarantees that both <paramref name="minValue"/> and <paramref name="maxValue"/> are possible outcomes.
+    /// </remarks>
+    public static class Random
     {
-        System.Random random = new();
-        return random.Next(minValue, maxValue+1);
+        /// <summary>
+        /// Returns a pseudo-random integer within the specified inclusive range.
+        /// </summary>
+        /// <param name="minValue">The lowest possible random number (inclusive).</param>
+        /// <param name="maxValue">The highest possible random number (inclusive).</param>
+        /// <returns>An integer between <paramref name="minValue"/> and <paramref name="maxValue"/>, inclusive.</returns>
+        /// <example>
+        /// Example usage:
+        /// <code>
+        /// int roll = Random.Next(1, 6); // Possible results: 1, 2, 3, 4, 5, 6
+        /// </code>
+        /// </example>
+        public static int Next(int minValue, int maxValue)
+        {
+            System.Random random = new();
+            return random.Next(minValue, maxValue + 1);
+        }
     }
 }

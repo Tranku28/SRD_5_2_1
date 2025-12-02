@@ -21,4 +21,8 @@
         <Using Include="Xunit"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SRD-5-2-1\SRD-5-2-1.csproj" />
+    </ItemGroup>
+
 </Project>

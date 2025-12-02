@@ -11,8 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9e307bf-c615-4b4a-91d1-7e5b9b8216e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SRD-5-2-1 Tests/RollTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SRD-5-2-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SRD-5-2-1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRD-5-2-1 Tests/SRD-5-2-1 Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SRD-5-2-1 Tests/SRD-5-2-1 Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRD-5-2-1 Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRD-5-2-1.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/SRD-5-2-1.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRD-5-2-1/DiceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SRD-5-2-1/DiceType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRD-5-2-1/Random.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SRD-5-2-1/Random.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRD-5-2-1/Roll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SRD-5-2-1/Roll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRD-5-2-1/SRD-5-2-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SRD-5-2-1/SRD-5-2-1.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +34,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SRD-5-2-1 Console/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SRD-5-2-1 Tests/TestRoll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SRD-5-2-1/DiceType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SRD-5-2-1/Random.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SRD-5-2-1/Roll.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -55,11 +66,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.SRD-5-2-1 Console">
     <configuration name="SRD-5-2-1 Console" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -95,7 +106,7 @@
       <workItem from="1764674371304" duration="6330000" />
       <workItem from="1764681942989" duration="368000" />
       <workItem from="1764712174370" duration="2124000" />
-      <workItem from="1764714367388" duration="666000" />
+      <workItem from="1764714367388" duration="4282000" />
     </task>
     <servers />
   </component>
