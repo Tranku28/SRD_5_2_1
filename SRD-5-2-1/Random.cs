@@ -6,7 +6,7 @@ namespace SRD5_2_1;
 public class Random
 {
     /// <summary>
-    /// Get number from the provided scope where whole scope is included
+    /// Get integer number from the provided scope where whole scope is included
     /// </summary>
     /// <param name="minValue">the lowest possible random number</param>
     /// <param name="maxValue">the highest possible random number</param>
