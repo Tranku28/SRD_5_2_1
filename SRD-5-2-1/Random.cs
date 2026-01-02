@@ -1,8 +1,7 @@
 namespace SRD5_2_1
 {
     /// <summary>
-    /// Provides a custom random number generator for SRD-based mechanics.
-    /// Unlike <see cref="System.Random"/>, this implementation includes the upper bound in the generated range.
+    /// Get integer number from the provided scope where whole scope is included
     /// </summary>
     /// <remarks>
     /// This class is designed for dice roll simulations in tabletop RPG systems.
