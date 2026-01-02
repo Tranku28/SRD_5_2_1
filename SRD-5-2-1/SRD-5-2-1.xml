@@ -4,68 +4,130 @@
         <name>SRD-5-2-1</name>
     </assembly>
     <members>
+        <member name="T:SRD5_2_1.DiceType">
+            <summary>
+            Represents a die type used in tabletop RPGs.
+            The numeric value corresponds to the number of sides.
+            </summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D2">
+            <summary>Two-sided dice (coin flip).</summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D3">
+            <summary>Three-sided dice.</summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D4">
+            <summary>Four-sided dice (tetrahedron).</summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D6">
+            <summary>Six-sided dice (standard cube).</summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D8">
+            <summary>Eight-sided dice.</summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D10">
+            <summary>Ten-sided dice.</summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D12">
+            <summary>Twelve-sided dice.</summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D20">
+            <summary>Twenty-sided dice (common ability score test dice).</summary>
+        </member>
+        <member name="F:SRD5_2_1.DiceType.D100">
+            <summary>Hundred-sided dice (percentile roll).</summary>
+        </member>
         <member name="T:SRD5_2_1.Random">
             <summary>
-            SRD Random implementation.
+            Provides a custom random number generator for SRD-based mechanics.
+            Unlike <see cref="T:System.Random"/>, this implementation includes the upper bound in the generated range.
             </summary>
+            <remarks>
+            This class is designed for dice roll simulations in tabletop RPG systems.
+            It guarantees that both <paramref name="minValue"/> and <paramref name="maxValue"/> are possible outcomes.
+            </remarks>
         </member>
         <member name="M:SRD5_2_1.Random.Next(System.Int32,System.Int32)">
             <summary>
-            Get number from the provided scope where whole scope is included
+            Returns a pseudo-random integer within the specified inclusive range.
+            <param name="minValue">The lowest possible random number (inclusive).</param>
+            <param name="maxValue">The highest possible random number (inclusive).</param>
+            <returns>An integer between <paramref name="minValue"/> and <paramref name="maxValue"/>, inclusive.</returns>
+            <example>
+            Example usage:
+            <code>
+            int roll = Random.Next(1, 6); // Possible results: 1, 2, 3, 4, 5, 6
+            </code>
+            </example>
             </summary>
-            <param name="minValue">the lowest possible random number</param>
-            <param name="maxValue">the highest possible random number</param>
-            <returns>int</returns>
         </member>
         <member name="T:SRD5_2_1.Roll">
             <summary>
-            A class for representing all in-game dice single and multiple (same dice) rolls.
+            Provides functionality for simulating dice rolls commonly used in tabletop RPGs.
+            Supports single rolls for standard dice types and multiple rolls combined into a total.
             </summary>
+            <remarks>
+            This class uses <see cref="T:SRD5_2_1.Random"/> internally to generate pseudo-random results.
+            </remarks>
         </member>
         <member name="P:SRD5_2_1.Roll.D2">
             <summary>
-            D2 roll dice
+            Rolls a two-sided die (D2).
             </summary>
         </member>
         <member name="P:SRD5_2_1.Roll.D3">
             <summary>
-            D3 roll dice
+            Rolls a three-sided die (D3).
             </summary>
         </member>
         <member name="P:SRD5_2_1.Roll.D4">
             <summary>
-            D4 roll dice
+            Rolls a four-sided die (D4).
             </summary>
         </member>
         <member name="P:SRD5_2_1.Roll.D6">
             <summary>
-            D6 roll dice
+            Rolls a six-sided die (D6).
             </summary>
         </member>
         <member name="P:SRD5_2_1.Roll.D8">
             <summary>
-            D8 roll dice
+            Rolls an eight-sided die (D8).
             </summary>
         </member>
         <member name="P:SRD5_2_1.Roll.D10">
             <summary>
-            D10 roll dice
+            Rolls a ten-sided die (D10).
             </summary>
         </member>
         <member name="P:SRD5_2_1.Roll.D12">
             <summary>
-            D12 roll dice
+            Rolls a twelve-sided die (D12).
             </summary>
         </member>
         <member name="P:SRD5_2_1.Roll.D20">
             <summary>
-            D20 roll dice
+            Rolls a twenty-sided die (D20).
             </summary>
         </member>
         <member name="P:SRD5_2_1.Roll.D100">
             <summary>
-            D100 roll dice
+            Rolls a hundred-sided die (D100).
             </summary>
+        </member>
+        <member name="M:SRD5_2_1.Roll.Multiple(SRD5_2_1.DiceType,System.Int32)">
+            <summary>
+            Rolls multiple dice of the same type and returns the combined result.
+            </summary>
+            <param name="diceType">The type of dice to roll (e.g., <see cref="F:SRD5_2_1.DiceType.D6"/>).</param>
+            <param name="rollCount">The number of dice to roll. Must be greater than zero.</param>
+            <returns>The sum of all rolled dice.</returns>
+            <example>
+            Example usage:
+            <code>
+            int total = Roll.Multiple(DiceType.D6, 3); // Rolls 3 six-sided dice and sums the result
+            </code>
+            </example>
         </member>
     </members>
 </doc>
