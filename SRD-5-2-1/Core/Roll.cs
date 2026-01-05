@@ -86,9 +86,7 @@ namespace SRD5_2_1.Core
             int CombineRoll(int diceSides)
             {
                 for (int i = 0; i < rollCount; i++)
-                {
                     result += Random.Next(1, diceSides);
-                }
 
                 return result;
             }
