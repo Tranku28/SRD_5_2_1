@@ -1,4 +1,4 @@
-namespace SRD5_2_1
+namespace SRD5_2_1.Core
 {
     /// <summary>
     /// Get integer number from the provided scope where whole scope is included

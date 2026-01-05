@@ -1,4 +1,4 @@
-namespace SRD5_2_1;
+namespace SRD5_2_1.Core;
 
 /// <summary>
 /// Represents a die type used in tabletop RPGs.

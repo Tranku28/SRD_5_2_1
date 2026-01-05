@@ -1,11 +1,11 @@
-namespace SRD5_2_1
+namespace SRD5_2_1.Core
 {
     /// <summary>
     /// Provides functionality for simulating dice rolls commonly used in tabletop RPGs.
     /// Supports single rolls for standard dice types and multiple rolls combined into a total.
     /// </summary>
     /// <remarks>
-    /// This class uses <see cref="SRD5_2_1.Random"/> internally to generate pseudo-random results.
+    /// This class uses <see cref="SRD5_2_1.Core.Random"/> internally to generate pseudo-random results.
     /// </remarks>
     public static class Roll
     {

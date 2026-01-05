@@ -1,6 +1,5 @@
-using SRD5_2_1;
-
-namespace SRD_5_2_1_Tests;
+using SRD5_2_1.Core;
+namespace SRD_5_2_1_Tests.CoreTests;
 
 public class RollTest
 {

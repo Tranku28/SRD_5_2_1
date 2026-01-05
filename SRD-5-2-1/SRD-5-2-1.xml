@@ -4,52 +4,52 @@
         <name>SRD-5-2-1</name>
     </assembly>
     <members>
-        <member name="T:SRD5_2_1.DiceType">
+        <member name="T:SRD5_2_1.Core.DiceType">
             <summary>
             Represents a die type used in tabletop RPGs.
             The numeric value corresponds to the number of sides.
             </summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D2">
+        <member name="F:SRD5_2_1.Core.DiceType.D2">
             <summary>Two-sided dice (coin flip).</summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D3">
+        <member name="F:SRD5_2_1.Core.DiceType.D3">
             <summary>Three-sided dice.</summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D4">
+        <member name="F:SRD5_2_1.Core.DiceType.D4">
             <summary>Four-sided dice (tetrahedron).</summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D6">
+        <member name="F:SRD5_2_1.Core.DiceType.D6">
             <summary>Six-sided dice (standard cube).</summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D8">
+        <member name="F:SRD5_2_1.Core.DiceType.D8">
             <summary>Eight-sided dice.</summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D10">
+        <member name="F:SRD5_2_1.Core.DiceType.D10">
             <summary>Ten-sided dice.</summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D12">
+        <member name="F:SRD5_2_1.Core.DiceType.D12">
             <summary>Twelve-sided dice.</summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D20">
+        <member name="F:SRD5_2_1.Core.DiceType.D20">
             <summary>Twenty-sided dice (common ability score test dice).</summary>
         </member>
-        <member name="F:SRD5_2_1.DiceType.D100">
+        <member name="F:SRD5_2_1.Core.DiceType.D100">
             <summary>Hundred-sided dice (percentile roll).</summary>
         </member>
-        <member name="T:SRD5_2_1.Random">
+        <member name="T:SRD5_2_1.Core.Random">
             <summary>
-            Provides a custom random number generator for SRD-based mechanics.
-            Unlike <see cref="T:System.Random"/>, this implementation includes the upper bound in the generated range.
+            Get integer number from the provided scope where whole scope is included
             </summary>
             <remarks>
             This class is designed for dice roll simulations in tabletop RPG systems.
             It guarantees that both <paramref name="minValue"/> and <paramref name="maxValue"/> are possible outcomes.
             </remarks>
         </member>
-        <member name="M:SRD5_2_1.Random.Next(System.Int32,System.Int32)">
+        <member name="M:SRD5_2_1.Core.Random.Next(System.Int32,System.Int32)">
             <summary>
             Returns a pseudo-random integer within the specified inclusive range.
+            </summary>
             <param name="minValue">The lowest possible random number (inclusive).</param>
             <param name="maxValue">The highest possible random number (inclusive).</param>
             <returns>An integer between <paramref name="minValue"/> and <paramref name="maxValue"/>, inclusive.</returns>
@@ -59,67 +59,66 @@
             int roll = Random.Next(1, 6); // Possible results: 1, 2, 3, 4, 5, 6
             </code>
             </example>
-            </summary>
         </member>
-        <member name="T:SRD5_2_1.Roll">
+        <member name="T:SRD5_2_1.Core.Roll">
             <summary>
             Provides functionality for simulating dice rolls commonly used in tabletop RPGs.
             Supports single rolls for standard dice types and multiple rolls combined into a total.
             </summary>
             <remarks>
-            This class uses <see cref="T:SRD5_2_1.Random"/> internally to generate pseudo-random results.
+            This class uses <see cref="T:SRD5_2_1.Core.Random"/> internally to generate pseudo-random results.
             </remarks>
         </member>
-        <member name="P:SRD5_2_1.Roll.D2">
+        <member name="P:SRD5_2_1.Core.Roll.D2">
             <summary>
             Rolls a two-sided die (D2).
             </summary>
         </member>
-        <member name="P:SRD5_2_1.Roll.D3">
+        <member name="P:SRD5_2_1.Core.Roll.D3">
             <summary>
             Rolls a three-sided die (D3).
             </summary>
         </member>
-        <member name="P:SRD5_2_1.Roll.D4">
+        <member name="P:SRD5_2_1.Core.Roll.D4">
             <summary>
             Rolls a four-sided die (D4).
             </summary>
         </member>
-        <member name="P:SRD5_2_1.Roll.D6">
+        <member name="P:SRD5_2_1.Core.Roll.D6">
             <summary>
             Rolls a six-sided die (D6).
             </summary>
         </member>
-        <member name="P:SRD5_2_1.Roll.D8">
+        <member name="P:SRD5_2_1.Core.Roll.D8">
             <summary>
             Rolls an eight-sided die (D8).
             </summary>
         </member>
-        <member name="P:SRD5_2_1.Roll.D10">
+        <member name="P:SRD5_2_1.Core.Roll.D10">
             <summary>
             Rolls a ten-sided die (D10).
             </summary>
         </member>
-        <member name="P:SRD5_2_1.Roll.D12">
+        <member name="P:SRD5_2_1.Core.Roll.D12">
             <summary>
             Rolls a twelve-sided die (D12).
             </summary>
         </member>
-        <member name="P:SRD5_2_1.Roll.D20">
+        <member name="P:SRD5_2_1.Core.Roll.D20">
             <summary>
             Rolls a twenty-sided die (D20).
             </summary>
         </member>
-        <member name="P:SRD5_2_1.Roll.D100">
+        <member name="P:SRD5_2_1.Core.Roll.D100">
             <summary>
             Rolls a hundred-sided die (D100).
             </summary>
         </member>
-        <member name="M:SRD5_2_1.Roll.Multiple(SRD5_2_1.DiceType,System.Int32)">
+        <member name="M:SRD5_2_1.Core.Roll.Multiple(SRD5_2_1.Core.DiceType,System.Int32)">
             <summary>
             Rolls multiple dice of the same type and returns the combined result.
             </summary>
-            <param name="diceType">The type of dice to roll (e.g., <see cref="F:SRD5_2_1.DiceType.D6"/>).</param>
+            <param name="diceType">The type of dice to roll (e.g., <see cref="F:SRD5_2_1.Core.DiceType.D6"/>).</param>
             <param name="rollCount">The number of dice to roll. Must be greater than zero.</param>
             <returns>The sum of all rolled dice.</returns>
             <example>
