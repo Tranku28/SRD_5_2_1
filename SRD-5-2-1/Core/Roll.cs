@@ -87,7 +87,7 @@ namespace SRD5_2_1.Core
             {
                 for (int i = 0; i < rollCount; i++)
                 {
-                    result += Random.Next(1, diceSides + 1);
+                    result += Random.Next(1, diceSides);
                 }
 
                 return result;

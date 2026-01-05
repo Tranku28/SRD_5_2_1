@@ -4,6 +4,46 @@
         <name>SRD-5-2-1</name>
     </assembly>
     <members>
+        <member name="T:SRD5_2_1.Core.Ability">
+            <summary>
+            Six default abilities every creature has.
+            </summary>
+        </member>
+        <member name="F:SRD5_2_1.Core.Ability.Strength">
+            <summary>
+            Measures the creature's physical power and ability to exert force.
+            </summary>
+        </member>
+        <member name="F:SRD5_2_1.Core.Ability.Dexterity">
+            <summary>
+            Represents agility, reflexes, and coordination.
+            </summary>
+        </member>
+        <member name="F:SRD5_2_1.Core.Ability.Constitution">
+            <summary>
+            Indicates endurance, health, and resistance to physical damage.
+            </summary>
+        </member>
+        <member name="F:SRD5_2_1.Core.Ability.Intelligence">
+            <summary>
+            Reflects reasoning, memory, and problem-solving ability.
+            </summary>
+        </member>
+        <member name="F:SRD5_2_1.Core.Ability.Wisdom">
+            <summary>
+            Measures perception, insight, and judgment.
+            </summary>
+        </member>
+        <member name="F:SRD5_2_1.Core.Ability.Charisma">
+            <summary>
+            Represents charm, influence, and social presence.
+            </summary>
+        </member>
+        <member name="T:SRD5_2_1.Core.AbilityScores">
+            <summary>
+            Represents six ability scores of a creature
+            </summary>
+        </member>
         <member name="T:SRD5_2_1.Core.DiceType">
             <summary>
             Represents a die type used in tabletop RPGs.
