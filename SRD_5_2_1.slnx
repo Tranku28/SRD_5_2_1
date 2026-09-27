@@ -1,3 +1,7 @@
 <Solution>
+  <Folder Name="/SRD_5_2_1.Domain/">
+    <Project Path="SRD_5_2_1.Domain/SRD_5_2_1.Domain/SRD_5_2_1.Domain.csproj" />
+  </Folder>
+  <Project Path="SRD_5_2_1.Tests/SRD_5_2_1.Tests.csproj" />
   
 </Solution>
