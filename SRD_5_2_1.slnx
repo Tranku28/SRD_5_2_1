@@ -1,7 +1,8 @@
 <Solution>
   <Folder Name="/SRD_5_2_1.Domain/">
-    <Project Path="SRD_5_2_1.Domain/SRD_5_2_1.Domain/SRD_5_2_1.Domain.csproj" />
+    <Project Path="SRD_5_2_1.Domain/SRD_5_2_1.Domain.csproj" />
   </Folder>
   <Project Path="SRD_5_2_1.Tests/SRD_5_2_1.Tests.csproj" />
+  <Project Path="SRD_5_2_1.WebApp/SRD_5_2_1.WebApp.csproj" />
   
 </Solution>
