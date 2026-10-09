@@ -23,4 +23,16 @@ public struct ProficiencyBonus
             _ => new(9)
         };
     }
+
+    public static ProficiencyBonus FromLevel(Level level)
+    {
+        return level.Value switch
+        {
+            <= 4 => new(2),
+            < 9 => new(3),
+            < 13 => new(4),
+            < 17 => new(5),
+            _ => new(6)
+        };
+    }
 }

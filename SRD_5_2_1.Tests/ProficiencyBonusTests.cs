@@ -4,7 +4,7 @@ namespace SRD_5_2_1.Tests;
 
 public class ProficiencyBonusTest()
 {
-    public static TheoryData<ChallengeRating, int> ChallengeRatings => new()
+    public static TheoryData<ChallengeRating, int> ChallengeRatings = new()
     {
         { ChallengeRating.FromRoundedValue(0), 2},
         { ChallengeRating.FromRoundedValue(0.125), 2},
@@ -27,5 +27,23 @@ public class ProficiencyBonusTest()
     {
         ProficiencyBonus bonus = ProficiencyBonus.FromChallengeRating(rating);
         Assert.True(bonus.Value == expected);
+    }
+
+    public static TheoryData<Level, int> Levels = new()
+    {
+        { new Level(1), 2},
+        { new Level(3), 2},
+        { new Level(5), 3},
+        { new Level(9), 4},
+        { new Level(14), 5},
+        { new Level(19), 6},
+        { new Level(20), 6},
+    };
+    [Theory]
+    [MemberData(nameof(Levels))]
+    public void Level_Proficiency_Bonus_Calculation(Level level, int expected)
+    {
+        ProficiencyBonus levelBonus = ProficiencyBonus.FromLevel(level);
+        Assert.True(levelBonus.Value == expected);
     }
 }
