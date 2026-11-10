@@ -31,4 +31,41 @@ public class RollTests
             Assert.InRange(result.Value, 1, sides);
         }
     }
+
+    public static TheoryData<AbilityScore, ProficiencyBonus, Modifier[], int> RollComponents = new()
+    {
+        { 
+            new AbilityScore(12), 
+            ProficiencyBonus.FromLevel(new Level(6)),
+            [new("Guidance", 4), new("Ring of Protection", 1)], 
+            29 
+        },
+        { 
+            new AbilityScore(20), 
+            ProficiencyBonus.FromLevel(new Level(20)),
+            [new("Guidance", 4), new("Ring of Protection", 1)], 
+            36
+        },
+        { 
+            new AbilityScore(30), 
+            ProficiencyBonus.FromLevel(new Level(20)),
+            [new("Guidance", 4), new("Ring of Protection", 1)], 
+            41
+        },
+    };
+
+    [Theory]
+    [MemberData(nameof(RollComponents))]
+    public void Roll_With_Ability_Modifier_And_Proficiency_Bonus_Should_Be_Within_Range(AbilityScore score, ProficiencyBonus bonus, Modifier[] modifiers, int max)
+    {
+        int i = 0;
+        
+        while (i < 100)
+        {
+            int rollResult = Roll.D20Test(score, bonus, modifiers).Value;
+            Assert.InRange(rollResult, 1, max);
+            
+            i++;
+        }
+    }
 }

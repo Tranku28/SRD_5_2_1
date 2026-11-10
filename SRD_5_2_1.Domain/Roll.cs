@@ -7,6 +7,12 @@ public struct Roll
     {
         Value = Random.Range(1, maxValue);
     }
+
+    private Roll(int maxValue, int score, int bonusValue, int circumstantialBonus) : this(maxValue)
+    {
+        Value = Random.Range(1, maxValue) + score + bonusValue + circumstantialBonus;
+    }
+    
     public static Roll D3() => new(3);
 
     public static Roll D4() => new(4);
@@ -19,4 +25,10 @@ public struct Roll
     public static Roll D12() => new(12);
 
     public static Roll D20() => new(20);
+
+    public static Roll D20Test(AbilityScore score, ProficiencyBonus bonus, Modifier[] modifiers)
+    {
+        int modifiersSum = modifiers.Sum(x => x.value);
+        return new(20, score.Modifier, bonus.Value, modifiersSum);
+    }
 }
