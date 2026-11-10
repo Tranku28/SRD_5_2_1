@@ -56,7 +56,7 @@ public class RollTests
 
     [Theory]
     [MemberData(nameof(RollComponents))]
-    public void Roll_With_Ability_Modifier_And_Proficiency_Bonus_Should_Be_Within_Range(AbilityScore score, ProficiencyBonus bonus, Modifier[] modifiers, int max)
+    public void Roll_With_Modifiers_And_Proficiency_Bonus_Should_Be_Within_Range(AbilityScore score, ProficiencyBonus bonus, Modifier[] modifiers, int max)
     {
         int i = 0;
         
